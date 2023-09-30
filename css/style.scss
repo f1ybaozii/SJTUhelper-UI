@@ -229,7 +229,7 @@ section{
 }
 
 .home{
-   background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/home-bg.jpg) no-repeat;
+   background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/background.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
@@ -327,7 +327,7 @@ section{
    }
 }
 
-.gallery{
+.previews{
 
    .box-container{
       @include gird(30rem);
