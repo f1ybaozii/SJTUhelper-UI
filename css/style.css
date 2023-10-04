@@ -232,6 +232,126 @@ section {
 .login-form form .account a:hover {
   text-decoration: underline !important;
 }
+.register-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+.register-form.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.register-form form {
+  width: 50rem;
+  padding: 4rem;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  -webkit-animation: fadeIn .2s linear;
+          animation: fadeIn .2s linear;
+}
+
+.register-form form #close-register-form {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.register-form form #close-register-form:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.register-form form .logo {
+  font-size: 2.5rem;
+  color: #da5b38cf;
+  font-weight: bolder;
+}
+
+.register-form form h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #222;
+  margin-top: 1rem;
+}
+
+.register-form form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #da5b38cf;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.register-form form .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.register-form form .flex label {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.register-form form .flex a {
+  font-size: 1.5rem;
+  color: #da5b38cf;
+  margin-left: auto;
+}
+
+.register-form form .flex a:hover {
+  text-decoration: underline !important;
+}
+
+.register-form form .link-btn {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.register-form form .account {
+  padding: 1.5rem .5rem;
+  background: #eee;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.register-form form .account a {
+  color: #da5b38cf;
+}
+
+.register-form form .account a:hover {
+  text-decoration: underline !important;
+}
+
 
 .home {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/background.jpg) no-repeat;
@@ -744,6 +864,12 @@ section {
     padding: 3rem 2rem;
   }
   .login-form form h3 {
+    font-size: 1.7rem;
+  }
+  .register-form form {
+    padding: 3rem 2rem;
+  }
+  .register-form form h3 {
     font-size: 1.7rem;
   }
   .header {
